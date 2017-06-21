@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -9,12 +9,34 @@
     <Import_RootNamespace>PaddleBallBlitz.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Content\" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollisionLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\BallLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\CpuLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\ItemSpawner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\PaddleContoller.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\PickupLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\PowerUps\Cloaking.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\PowerUps\Fireball.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItemType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PaddleBallBlitzGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\ItemSpawnerSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
- </Project>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+    <None Include="$(MSBuildThisFileDirectory)Content\fonts\Xolonium.spritefont" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Content\images\ball.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\images\paddle.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\particles\Sun.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\sound\ceiling-hit.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\sound\paddle-hit.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\SpriteAtlas.xml" />
+  </ItemGroup>
+</Project>

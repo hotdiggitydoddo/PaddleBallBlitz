@@ -5,9 +5,34 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PaddleBallBlitz.Shared", "PaddleBallBlitz.Shared\PaddleBallBlitz.Shared.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nez", "..\..\Nez\Nez.Portable\Nez.csproj", "{60B7197D-D0D5-405C-90A2-A56903E9B039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddleBallBlitz.OpenGL", "PaddleBallBlitz.OpenGL\PaddleBallBlitz.OpenGL.csproj", "{5B900490-2344-4785-8C5E-9094D1058F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nez.PipelineImporter", "..\..\Nez\Nez.PipelineImporter\Nez.PipelineImporter.csproj", "{63E831F4-B847-4150-B5AF-CBE059EE27B8}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PaddleBallBlitz.Shared\PaddleBallBlitz.Shared.projitems*{5b900490-2344-4785-8c5e-9094d1058f61}*SharedItemsImports = 4
 		PaddleBallBlitz.Shared\PaddleBallBlitz.Shared.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60B7197D-D0D5-405C-90A2-A56903E9B039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B7197D-D0D5-405C-90A2-A56903E9B039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B7197D-D0D5-405C-90A2-A56903E9B039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B7197D-D0D5-405C-90A2-A56903E9B039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B900490-2344-4785-8C5E-9094D1058F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B900490-2344-4785-8C5E-9094D1058F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B900490-2344-4785-8C5E-9094D1058F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B900490-2344-4785-8C5E-9094D1058F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E831F4-B847-4150-B5AF-CBE059EE27B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E831F4-B847-4150-B5AF-CBE059EE27B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E831F4-B847-4150-B5AF-CBE059EE27B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E831F4-B847-4150-B5AF-CBE059EE27B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

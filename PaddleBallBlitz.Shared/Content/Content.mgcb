@@ -3,13 +3,72 @@
 
 /outputDir:bin/$(Platform)
 /intermediateDir:obj/$(Platform)
-/platform:Windows
+/platform:DesktopGL
 /config:
-/profile:Reach
+/profile:HiDef
 /compress:False
 
 #-------------------------------- References --------------------------------#
 
+/reference:..\..\..\..\Nez\Nez.PipelineImporter\bin\Debug\Ionic.ZLib.dll
+/reference:..\..\..\..\Nez\Nez.PipelineImporter\bin\Debug\Newtonsoft.Json.dll
+/reference:..\..\..\..\Nez\Nez.PipelineImporter\bin\Debug\Nez.PipelineImporter.dll
 
 #---------------------------------- Content ---------------------------------#
+
+#begin images/ball.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/ball.png
+
+#begin images/paddle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:images/paddle.png
+
+#begin SpriteAtlas.xml
+/importer:XmlImporter
+/processor:TextureAtlasProcessor
+/processorParam:compressTexture=False
+/processorParam:animationFPS=10
+/processorParam:flattenPaths=True
+/build:SpriteAtlas.xml
+
+#begin fonts/Xolonium.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:fonts/Xolonium.spritefont
+
+#begin sound/ceiling-hit.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sound/ceiling-hit.mp3
+
+#begin sound/paddle-hit.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sound/paddle-hit.mp3
+
+#begin particles/Sun.xml
+/importer:ParticleDesignerImporter
+/processor:ParticleDesignerProcessor
+/build:particles/Sun.xml
 
